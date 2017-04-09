@@ -1,3 +1,111 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://quickwebrefs.com/wp-content/uploads/2017/03/enjoyable-inspiration-small-apartment-living-room-ideas-16-trendy-decorating-design-livingroom-15jpg.jpg');">
+      <div class="banner-content">
+        <h1>WELCOME to Taewoo bookings</h1>
+        <p>Rent unique places to stay from local hosts in 190+ countries.</p>
 
+      <!--  <form class="search-form" >
+            <div class="search-place">
+                <div class="input-placeholder">
+                    <div class="placeholder-icon"><svg class="hng-search"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://hotels.ng/media/v52/img/icons.svg#hng-search"></use></svg></div> 
+                    <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="form-control icon--present input-lg typeahead tt-hint" required="" disabled="" autocomplete="off" spellcheck="false" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><input type="text" name="query" class="form-control icon--present input-lg typeahead tt-input" placeholder="Search for a city or particular hotel" required="" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Lato, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-hotels"></div><div class="tt-dataset-towns"></div></span></span>
+                    <input type="hidden" name="international_srch" class="international_srch" value="">
+                </div>
+            </div>
+            <div class="check-in">
+                <div class="input-placeholder">
+                    <div class="placeholder-icon"><svg class="hng-calendar"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://hotels.ng/media/v52/img/icons.svg#hng-calendar"></use></svg></div>
+                    <input type="text" id="checkin" name="checkin" class="form-control icon--present input-lg" placeholder="Check in" data-date-format="dd-mm-yyyy" readonly="">
+                </div>
+            </div>
+            <div class="check-out">
+                <div class="input-placeholder">
+                    <div class="placeholder-icon"><svg class="hng-calendar"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://hotels.ng/media/v52/img/icons.svg#hng-calendar"></use></svg></div>
+                    <input type="text" id="checkout" name="checkout" class="form-control icon--present input-lg" placeholder="Check out" data-date-format="dd-mm-yyyy" readonly="">
+                </div>
+            </div>
+            <div class="find">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Find Hotels</button>
+            </div>
+        </form>-->
+        <form action="#" class="form-inline">
+          <input type="text" class="form-control input-lg" placeholder="checkin" >
+          <input type="text" class="form-control input-lg" placeholder="checkout">
+          <select name="" id="" class="form-control input-lg">
+            <option value="1">1 person</option>
+            <option value="2">2 persons</option>
+            <option value="3">3 persons</option>
+          </select>
+       
+          <button type="submit" class="btn btn-primary btn-lg btn-small" id="submit_location" onclick="return validateSearch();">
+                    SEARCH </button>
+        </form>
+      </div>
+    </div>
+    <div class="container text-center padded features">
+      <div class="row">
+        <div class="col-xs-20 col-sm-6 col-md-3">
+          <img src="https://cdn.shutterstock.com/shutterstock/videos/15396037/thumb/1.jpg" alt="">
+          <h2>Discover the world</h2>
+          <p>The earth is your new home.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="http://www.ijtra.com/images/paypal.png" alt="">
+          <h2>Pay online</h2>
+          <p>No cash issues anymore.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="https://21887-presscdn-pagely.netdna-ssl.com/wp-content/uploads/Friends-on-the-road-7.jpg" alt="">
+          <h2>Meet people</h2>
+          <p>Discover new culture and lifestyle.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img src="https://s-media-cache-ak0.pinimg.com/originals/6f/3b/e2/6f3be265075fcbe1d9b398dd07892e9f.jpg" alt="">
+          <h2>Share and love</h2>
+          <p>Join a community you will love.</p>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper-white padded">
+      <div class="container">
+        <h2 class="text-center">Your next trip</h2>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://a0.muscache.com/im/pictures/c0071a4f-25d7-43b0-919b-c9a0553938f6.jpg?aki_policy=small');">
+              <div class="card-category">Paris</div>
+              <div class="card-description">
+                <h2>Seb's home</h2>
+                <p>Charming room with patio</p>
+              </div>
+              <img class="card-user avatar avatar-large" src="https://a0.muscache.com/im/pictures/c0071a4f-25d7-43b0-919b-c9a0553938f6.jpg?aki_policy=small">
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://images.designtrends.com/wp-content/uploads/2016/02/03101640/Awesome-red-living-room.jpg');">
+              <div class="card-category">Brussels</div>
+              <div class="card-description">
+                <h2>Anne's home</h2>
+                <p>Lovely house</p>
+              </div>
+              <img class="card-user avatar avatar-large" src="https://images.designtrends.com/wp-content/uploads/2016/02/03101640/Awesome-red-living-room.jpg">
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+          
+          <div class="col-xs-12 col-sm-4">
+            <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://s-media-cache-ak0.pinimg.com/originals/a4/eb/81/a4eb81e56c3f23fa7d91ab8278a36426.jpg');">
+              <div class="card-category">London</div>
+              <div class="card-description">
+                <h2>Romain's home</h2>
+                <p>Nice flat in Piccadilly</p>
+              </div>
+              <img class="card-user avatar avatar-large" src="https://s-media-cache-ak0.pinimg.com/originals/a4/eb/81/a4eb81e56c3f23fa7d91ab8278a36426.jpg">
+              <a class="card-link" href="#" ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
