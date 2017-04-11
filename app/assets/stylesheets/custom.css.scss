@@ -119,7 +119,7 @@
 /* host */
 .jumbotron {
     position: relative;
-    background-image: url(http://www.impressiveinteriordesign.com/diverse/modernliving/white-and-black-livingroom.jpg);
+    background-image: url();
     background-size: cover;
     background-position: center center;
     margin-bottom: 40px;
@@ -157,52 +157,41 @@ h1 {
     display: block;
     justify-content: center;
 }
+#test {
+   background-image: url(http://www.impressiveinteriordesign.com/diverse/modernliving/white-and-black-livingroom.jpg);
+   height: 65vh;
+   background-size: cover !important;
+   width: 100%;
+   color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* footer */
-@media only screen
-{
-.footer-container {
-    height: auto;
-    margin: 0;
-    padding: 0;
-    max-width: 980px;
-}
-}
-  div {
-    display: block;
-}
-  #body-footer-wrap {
-    text-align: left;
-    line-height: 18px;
-    font-size: 12px;
-  }
-#footer-menu .footer_widget {
-  float: left;
-  width: 195px;
-  padding: 0px 0px 10px 0px;
-}
-list-inline{
- float: center;
-}
-
 footer {
-  margin-top: 100px;
+  margin-top: 35px;
   padding-top: 10px;
-  border-bottom: 1px solid black;
-  color: black;
+  padding-bottom: 17px;
+  border-top: 1px solid #4286f4;
+  background: #000;
+  color: #FFF;
   a {
-    color: black;
+    color: #FFF;
     &:hover {
-      color: black;
+      color: #4286f4;
+      text-decoration: none;
     }
   }
-    ul {
+  small {
     float: left;
+  }
+  ul {
+    float: right;
     list-style: none;
-    margin: 0 25px;
     li {
-      float: left;
-      margin-left: 15px;
+      margin-left: 0px;
     }
   }
 }
