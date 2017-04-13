@@ -1,0 +1,57 @@
+<%= form_for(listing) do |f| %>
+  <% if listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+      <ul>
+      <% listing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class:"form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :address %>
+    <%= f.text_field :address, class:"form-control" %>
+  </div>
+  
+   <div class="form-group">
+    <%= f.label :price %>
+    <%= f.text_field :price, class:"form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :Maximum_quests %>
+  <%= f.text_field :maximum_quests, class:"form-control" %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label :Available_from %>
+   <%= f.date_select :availability_from, class:"form-control" %>
+  </div>
+
+ <div class="form-group">
+    <%= f.label :Available_to %>
+   <%= f.date_select :availability_to, class:"form-control" %>
+  </div>
+  
+   <div class="form-group">
+    <%= f.label "Room Type" %>
+    <%= f.select :room_type, get_room_types.map {|value| [value,value]} %>
+  </div>
+  
+  <div class="form-group">
+    <%= f.label "Home Type" %>
+    <%= f.select :home_type, get_home_types.map {|value| [value,value]} %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit class:"btn btn-primary" %>
+  </div>
+<% end %>

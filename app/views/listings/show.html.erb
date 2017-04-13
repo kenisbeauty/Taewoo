@@ -1,0 +1,38 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @listing.name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @listing.address %>
+</p>
+
+<p>
+  <strong>maximum_quests:</strong>
+  <%= @listing.maximum_quests%>
+</p>
+
+<p>
+  <strong>Available_from:</strong>
+  <%= @listing.availability_from %>
+</p>
+
+<p>
+  <strong>Available_to:</strong>
+  <%= @listing.availability_to%>
+</p>
+
+<p>
+  <strong>Room Type:</strong>
+  <%= @listing.room_type %>
+</p>
+
+<p>
+  <strong>home Type:</strong>
+  <%= @listing.home_type %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing), class:"btn btn-link" %> |
+<%= link_to 'Back', listings_path, class:"btn btn-link" %>

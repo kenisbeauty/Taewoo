@@ -1,4 +1,8 @@
-
+body {
+  background-color: #F5F5F1;
+  color: #333333;
+  font-family: Arial, helvetica, sans-serif;
+}
 .navbar-inverse {
 	.container-fluid {
 	background-color: #0a0511;
@@ -171,11 +175,11 @@ h1 {
 
 /* footer */
 footer {
-  margin-top: 35px;
-  padding-top: 10px;
-  padding-bottom: 17px;
-  border-top: 1px solid #4286f4;
-  background: #000;
+  margin-top: 15px;
+  padding-top: 0px;
+  padding-bottom: 5px;
+  border-top: 1px  #F5F5F1;
+  background: #333333;
   color: #FFF;
   a {
     color: #FFF;
