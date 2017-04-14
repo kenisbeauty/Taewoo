@@ -12,4 +12,10 @@ module Taewoo
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
   end
+  
+  
+  config.paperclip_defaults = {
+            :storage => :s3,
+            :s3_host_name => 's3-us-west-2.amazonaws.com'
+ }
 end

@@ -10,19 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170413152409) do
+ActiveRecord::Schema.define(version: 20170413210731) do
 
   create_table "listings", force: :cascade do |t|
     t.string   "name"
     t.string   "address"
-    t.datetime "created_at",                                null: false
-    t.datetime "updated_at",                                null: false
+    t.datetime "created_at",                                 null: false
+    t.datetime "updated_at",                                 null: false
     t.date     "availability_from"
     t.date     "availability_to"
-    t.integer  "maximum_quests",    default: 1
-    t.string   "home_type",         default: "house"
-    t.string   "room_type",         default: "entire home"
+    t.integer  "maximum_quests",     default: 1
+    t.string   "home_type",          default: "house"
+    t.string   "room_type",          default: "entire home"
     t.decimal  "price"
+    t.integer  "user_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
   end
 
   create_table "users", force: :cascade do |t|

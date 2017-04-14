@@ -1,38 +1,20 @@
-
-<p>
-  <strong>Name:</strong>
-  <%= @listing.name %>
-</p>
-
-<p>
-  <strong>Address:</strong>
-  <%= @listing.address %>
-</p>
-
-<p>
-  <strong>maximum_quests:</strong>
-  <%= @listing.maximum_quests%>
-</p>
-
-<p>
-  <strong>Available_from:</strong>
-  <%= @listing.availability_from %>
-</p>
-
-<p>
-  <strong>Available_to:</strong>
-  <%= @listing.availability_to%>
-</p>
-
-<p>
-  <strong>Room Type:</strong>
-  <%= @listing.room_type %>
-</p>
-
-<p>
-  <strong>home Type:</strong>
-  <%= @listing.home_type %>
-</p>
+<div class="row">
+  <div class="col-md-5">
+    <%= image_tag @listing.image.url(:medium) %>
+  <div class="col-md-6">
+     <div class="thumbnail">
+    <h3><%= @listing.name %></h3>
+    <p><%= number_to_currency(@listing.price) %></p>
+    <p><%= @listing.address %></p>
+    <p><%= @listing.home_type %></p>
+    <p><%= @listing.maximum_quests%></p>
+    <p> <%= @listing.availability_from %></p>
+    <p><%= @listing.availability_to%></p>
+    <p><%= @listing.room_type %></p>
+</div>
+  </div>
+</div>
+</div>
 
 <%= link_to 'Edit', edit_listing_path(@listing), class:"btn btn-link" %> |
 <%= link_to 'Back', listings_path, class:"btn btn-link" %>
