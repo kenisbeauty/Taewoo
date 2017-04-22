@@ -86,15 +86,7 @@ Rails.application.configure do
 #required for devise. Remember to change localhost:3000 to actual application host:domain name wwww.blabla
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
-#paperclip and amazon s3 storage
-config.paperclip_defaults = {
-  :storage => :s3,
-  s3_credentials: {
-    bucket: ENV.fetch('S3_BUCKET_NAME'),
-    access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
-    secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
-    s3_region: ENV.fetch('AWS_REGION'),
-  }
-}
-config.action_controller.asset_host = "kenisbeau.s3.amazonaws.com"
+
+
+
 end
