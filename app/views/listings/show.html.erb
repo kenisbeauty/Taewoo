@@ -1,7 +1,8 @@
-<div class="row">
-  <div class="col-md-5">
-    <%= image_tag @listing.image.url(:medium) %>
-  <div class="col-md-6">
+<div class="container">
+  <div class="col-md-3">
+   <%= image_tag @listing.image.url(:medium) %>
+     </div>
+  <div class="col-md-9">
      <div class="thumbnail">
     <h3><%= @listing.name %></h3>
     <p><%= number_to_currency(@listing.price) %></p>
@@ -12,9 +13,12 @@
     <p><%= @listing.availability_to%></p>
     <p><%= @listing.room_type %></p>
 </div>
-  </div>
-</div>
+ 
 </div>
 
 <%= link_to 'Edit', edit_listing_path(@listing), class:"btn btn-link" %> |
 <%= link_to 'Back', listings_path, class:"btn btn-link" %>
+
+</div>
+
+
