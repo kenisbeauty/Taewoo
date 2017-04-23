@@ -6,6 +6,7 @@ before_action :authenticate_user!, only: [:create,:edit, :destroy, :new]
   # GET /listings.json
   def index
     @listings = Listing.all
+    
   end
 
   # GET /listings/1
