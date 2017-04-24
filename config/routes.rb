@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
   resources :listings do
-    resources :books
+    collection do
+      resources :books
   end
+end
   devise_for :users
   resources :users
   root :to => 'static_pages#home'
