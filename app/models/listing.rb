@@ -3,6 +3,7 @@ has_attached_file :image, styles: { medium: "200x", thumb: "100x100>" }, default
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\z/
   validates :address, :name, :home_type, :room_type, :availability_from, :availability_to, :maximum_quests, :price,:image, presence: true
 belongs_to :user
+has_many :books
 def self.search(search)
     where("title LIKE ?", "%#{search}%")
 end

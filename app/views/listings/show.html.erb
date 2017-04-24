@@ -12,6 +12,7 @@
     <p> <%= @listing.availability_from %></p>
     <p><%= @listing.availability_to%></p>
     <p><%= @listing.room_type %></p>
+    <%= link_to "Book Now",new_listing_book_path(@listing), class: "btn btn-primary" %>
 </div>
  
 </div>

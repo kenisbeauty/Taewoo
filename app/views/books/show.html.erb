@@ -1,0 +1,19 @@
+
+
+<p>
+  <strong>Checkin:</strong>
+  <%= @book.checkin %>
+</p>
+
+<p>
+  <strong>Checkout:</strong>
+  <%= @book.checkout %>
+</p>
+
+<p>
+  <strong>No of guests:</strong>
+  <%= @book.no_of_guests %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>

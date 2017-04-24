@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
+  
   resources :listings do
-    collection do
-      get 'search'
-end
-end
+    resources :books
+  end
   devise_for :users
   resources :users
   root :to => 'static_pages#home'
