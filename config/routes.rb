@@ -12,5 +12,6 @@ end
   get  '/contact', to: 'static_pages#contact'
   get  '/host',    to: 'static_pages#host'
   get  '/users', to: 'users#index'
+  get 'hostess' => "listings#hostess"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
